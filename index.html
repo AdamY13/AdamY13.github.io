@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Q4 Answer</title>
+    </head>
+    <body>
+        <form method="post" action="http://www.deitel.com">
+            <table>
+                <h2>Favourite Concert Location in Dubai</h2>
+                <tbody>
+                    <!--I made sure that the user enters an email,number, and password in order to submit by setting them as "required"-->
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <!--Used "pattern" so that the user can only enter the phone number in the specific format-->
+                        <td><input type="tel" placeholder="+971-XXX-XXXXXXX" pattern="\+971\-d{3}\-d{7}" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Favourite Concert Location:</td>
+                        <td>
+                            <select name="location">
+                                <option>Atlantis The Palm</option>
+                                <option selected>Burj Al Arab</option>
+                                <option>Jumeirah Beach Hotel</option>
+                                <option>Palace Downtown</option>
+                                <option>Rose Rayhaan by Rotana</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Preffered Concert Type:</td>
+                        <td><input name="Preffered Type" type="radio" value="Indoor"/>Indoor<input name="Preffered Type" type="radio" value="Outdoor"/>Outdoor</td>
+                    </tr>
+                    <tr>
+                        <td>Additional Preferences:</td>
+                        <td><input name="Preference" type="checkbox" value="VIP access"/>VIP access<input name="Preference" type="checkbox" value="Parking"/>Parking<input name="Preference" type="checkbox" value="Seating"/>Seating</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Comments:</td>
+                        <td><textarea name="comments" rows="4" cols="45"></textarea></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><input type="submit" value="Submit"> <input type="reset" value="Reset"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </body>
+</html>
