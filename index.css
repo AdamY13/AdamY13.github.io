@@ -23,7 +23,7 @@
     color: white;
 }
 body {
-    background: url(images/homeback.jpg) no-repeat;
+    background: url("images/homeback.jpg") no-repeat;
     background-size: cover;
 }
 #links {
