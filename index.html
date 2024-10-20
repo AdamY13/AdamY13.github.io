@@ -1,60 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html>
+    <header>
         <meta charset="utf-8">
-        <title>Q4 Answer</title>
-    </head>
+        <title>MotorHaven</title>
+        <link rel="stylesheet" type="text/css" href="index.css" title="style" />
+    </header>
     <body>
-        <form method="post" action="http://www.deitel.com">
-            <table>
-                <h2>Favourite Concert Location in Dubai</h2>
-                <tbody>
-                    <!--I made sure that the user enters an email,number, and password in order to submit by setting them as "required"-->
-                    <tr>
-                        <td>Email:</td>
-                        <td><input type="email" required/></td>
-                    </tr>
-                    <tr>
-                        <td>Phone Number:</td>
-                        <!--Used "pattern" so that the user can only enter the phone number in the specific format-->
-                        <td><input type="tel" placeholder="+971-XXX-XXXXXXX" pattern="\+971\-d{3}\-d{7}" required/></td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                        <td><input type="password" required/></td>
-                    </tr>
-                    <tr>
-                        <td>Favourite Concert Location:</td>
-                        <td>
-                            <select name="location">
-                                <option>Atlantis The Palm</option>
-                                <option selected>Burj Al Arab</option>
-                                <option>Jumeirah Beach Hotel</option>
-                                <option>Palace Downtown</option>
-                                <option>Rose Rayhaan by Rotana</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Preffered Concert Type:</td>
-                        <td><input name="Preffered Type" type="radio" value="Indoor"/>Indoor<input name="Preffered Type" type="radio" value="Outdoor"/>Outdoor</td>
-                    </tr>
-                    <tr>
-                        <td>Additional Preferences:</td>
-                        <td><input name="Preference" type="checkbox" value="VIP access"/>VIP access<input name="Preference" type="checkbox" value="Parking"/>Parking<input name="Preference" type="checkbox" value="Seating"/>Seating</td>
-                    </tr>
-                    <tr>
-                        <td>Extra Comments:</td>
-                        <td><textarea name="comments" rows="4" cols="45"></textarea></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td><input type="submit" value="Submit"> <input type="reset" value="Reset"></td>
-                    </tr>
-                </tfoot>
-            </table>
-        </form>
-        <p><a href="Q3.html">Link to next page</a></p>
+        <div id="title">
+            <h1><span>M</span>otor<span>H</span>aven</h1>
+            <h2>Find The Perfect Car Part With Ease</h2>
+        </div>
+        <div id="links"> <!--For each link we will include the individual webpages done by each group member-->
+            <a href="index.html"><p id="home"> Home </p></a>
+            <a href=""><p id="find"> Find Parts </p></a>
+            <a href=""><p id="sell"> Sell Parts </p></a>
+            <a href=""><p id="guide"> Guide </p></a>
+            <a href=""><p id="contact"> Contact </p></a>
+        </div>
+        <div id="search">
+            <input id="search-bar" type="tezt" placeholder="Search for your needs">
+        </div>
+        <div id="intro">
+            <p>MotorHaven is an innovative and user-friendly online platform designed to help car enthusiasts, mechanics, 
+                and vehicle owners from all around the globe easily and efficiently locate the perfect car parts tailored 
+                to their specific needs. Whether you're searching for high-performance engine components, reliable brake 
+                systems, or suspension upgrades, MotorHaven offers a vast selection of premium-quality products from trusted manufacturers.
+                <br/><br/>With a focus on convenience, the website enables users to filter parts by vehicle make, model, price range, 
+                and even specific performance requirements, ensuring that each customer can find the exact part they need 
+                without hassle. The platform's intuitive search features and detailed product descriptions help users make 
+                informed decisions, comparing options based on quality, brand reputation, and cost-effectiveness.
+                <br/><br/>Moreover, MotorHaven offers competitive pricing and exclusive deals, making it the go-to destination 
+                for both professional mechanics and DIY enthusiasts alike. The platform also supports a global customer 
+                base by providing international shipping, ensuring that no matter where you are, you can access the parts you need.
+                <br/><br/>Beyond just shopping, MotorHaven also includes a community forum where users can share advice, tips, and 
+                reviews, helping each other to make the best possible choices for their vehicles. With its sleek design, 
+                seamless navigation, and customer-first approach, MotorHaven aims to revolutionize the way people shop for 
+                car parts, offering both convenience and reliability in every transaction.</p>
+        </div>
+        <div class="options" id="find-parts">
+            <img src="images/buy-parts.jpg">
+            <p>Find Parts</p>
+        </div>
+        <div class="options" id="sell-parts">
+            <img src="images/sell-parts.jpg">
+            <p>Sell Parts</p>
+        </div>
+        <div class="options" id="guide-part">
+            <img src="images/guide.jpeg">
+            <p>Guide for spare parts</p>
+        </div>
+        <div class="options" id="about-us">
+            <img src="images\contact.jpg">
+            <p>Contact Us</p>
+        </div>
+
     </body>
 </html>
