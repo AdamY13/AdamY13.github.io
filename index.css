@@ -1,4 +1,4 @@
-#title {
+.title {
     text-align: center;
     background-color: none;
     padding-bottom: 1px;
@@ -7,26 +7,26 @@
     border-color: white;
     margin-bottom: 0;
 }
-#title h1{
+.title h1{
     color: white;
     font-size: 30pt;
     margin-top: 0;
     margin-bottom: 10px;
 }
-#title h1 span{
+.title h1 span{
     color: red;
     font-size: 30pt;
     margin-top: 0;
     margin-bottom: 10px;
 }
-#title h2{
+.title h2{
     color: white;
 }
 body {
     background: url(./images/homeback.jpg) no-repeat;
     background-size: cover;
 }
-#links {
+.links {
     color: white;
     text-align: center;
     border-bottom: 2px solid;
@@ -34,14 +34,14 @@ body {
     margin-top: 0;
     background-color: gray;
 }
-#links p{
+.links p{
     margin-left: 20px;
     margin-right: 20px;
     color: white;
     display: inline-block;
     font-size: 13pt;
 }
-#links p:hover{
+.links p:hover{
     color: red;
     text-decoration: underline;
     cursor: pointer;
