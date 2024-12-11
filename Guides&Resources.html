@@ -3,159 +3,175 @@
     <meta charset="UTF-8">
     <title>Guides & Resources - Motor Heaven</title>
     <link rel="stylesheet" type="text/css" href="Sellingparts.css"/>
+    <script>
+        var helpArray = [ "Enter your car name in this box. (e.g: Toyota).",
+        "Enter your car model here (e.g: Corola).",
+        "Enter your car year here (e.g: 2015).",
+        "Enter the specfic car part you are looking for.",
+        "Enter your budget.",
+        "Have additional information? Enter it here!", "This button submits the form to the server-side script."," " ];
+        var helpTextDiv;
+        
+        
+          
+          function init()
+          {
+        
+             helpTextDiv = document.getElementById( "helpText" );
+        
+            
+             
+             //register listeners
+             registerListeners(document.getElementById( "car-make" ), 0 );
+             registerListeners(document.getElementById( "car-model" ), 1 );
+             registerListeners(document.getElementById( "car-year" ), 2 );
+             registerListeners(document.getElementById( "part-category" ), 3 );
+             registerListeners(document.getElementById( "budget" ), 4 );
+             registerListeners(document.getElementById( "comments" ), 5 );
+             registerListeners(document.getElementById( "submit" ), 6 );
+             
+             
+          
+             var myForm = document.getElementById( "myForm" );
+             myForm.addEventListener( "submit", 
+                function()
+                {                                                         
+                   return confirm( "Are you sure you want to submit?" );  
+                }, 
+                false );
+             myForm.addEventListener( "reset", 
+                function()
+                {                                                         
+                   return confirm( "Are you sure you want to reset?" );  
+                },
+                false );
+          }
+          
+          //register events
+          function registerListeners( object, messageNumber )
+          {
+             object.addEventListener( "focus", 
+                function() { helpTextDiv.innerHTML = helpArray[ messageNumber ]; },
+                false );
+             object.addEventListener( "blur", 
+                function() { helpTextDiv.innerHTML = helpArray[ 7 ]; }, false );
+          } // end function registerListener
+          
+          window.addEventListener( "load", init, false );
+    </script>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <h1 class="header-title"><span class="highlight">⚙️M</span>otor<span class="highlight">H</span>aven🛠️</h1>
-        </div>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="Filter page.html">Find Parts</a>
-            <a href="Selling parts.html">Sell Parts</a>
-            <a href="Guides&Resources.html">Guide</a>
-            <a href="AboutUsPage.html">About Us</a>
-        </div>
-    </header>
-    <div class="container">
-        <div class="content">
-            <section id="buying-guides">
-                <h2>Buying Guides</h2>
-                <p>Learn how to evaluate car parts, avoid scams, and get the best deals when buying car parts on Motor Heaven.</p>
-                <article>
-                    <h3>How to Avoid Scams When Buying Car Parts</h3>
-                    <p>When buying car parts, it’s crucial to verify the authenticity of both the seller and the product. Here are some tips:</p>
-                    <ul>
-                        <li><strong>Research the seller:</strong> Check reviews and ratings to ensure they are trustworthy.</li>
-                        <li><strong>Request detailed photos:</strong> Make sure the seller provides clear images from multiple angles.</li>
-                        <li><strong>Check return policies:</strong> Always make sure the seller offers a clear return or refund policy in case the part isn’t as described.</li>
-                        <li><strong>Use secure payment methods:</strong> Avoid direct bank transfers; opt for secure platforms like PayPal.</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Getting the Best Deals on Car Parts</h3>
-                    <p>To get the best prices, it’s important to shop smart:</p>
-                    <ul>
-                        <li><strong>Shop during sales events:</strong> Look out for discounts during events like Black Friday or Cyber Monday.</li>
-                        <li><strong>Compare prices:</strong> Use multiple websites or comparison tools to ensure you’re getting the best deal.</li>
-                        <li><strong>Consider used or refurbished parts:</strong> If budget is a concern, used or refurbished parts can offer significant savings.</li>
-                        <li><strong>Use discount codes:</strong> Always check for available coupon codes before checking out.</li>
-                    </ul>
-                </article>
-            </section>
-
-            <section id="maintenance-guides">
-                <h2>Maintenance Guides</h2>
-                <p>Discover how to install and maintain car parts for various types of vehicles.</p>
-                <article>
-                    <h3>General Car Maintenance Tips</h3>
-                    <p>To keep your car running smoothly and avoid costly repairs, regular maintenance is key. Here are some general maintenance tips:</p>
-                    <ul>
-                        <li><strong>Regular oil changes:</strong> Change the oil every 5,000 to 7,500 miles to ensure engine health.</li>
-                        <li><strong>Check tire pressure:</strong> Make sure your tires are properly inflated and rotate them every 6,000 miles to ensure even wear.</li>
-                        <li><strong>Inspect the brake system:</strong> Regularly check your brake pads and replace them when necessary to maintain safe braking.</li>
-                        <li><strong>Replace air filters:</strong> Change your air filter every 12,000 to 15,000 miles to improve engine efficiency and prolong its life.</li>
-                    </ul>
-
-                </article>
-                <article>
-                    <h3>General Brake Replacement Guide</h3>
-                    <p>Replacing brake pads is a common maintenance task. Follow these general steps to replace your brake pads:</p>
-                    <ul>
-                        <li>Raise the car with a jack and remove the wheels.</li>
-                        <li>Remove the caliper bolts and slide the caliper off the rotor.</li>
-                        <li>Replace the old brake pads with new ones and reassemble the caliper.</li>
-                        <li>Reinstall the wheels, lower the car, and pump the brake pedal a few times to ensure firm braking.</li>
-                    </ul>
-                </article>
-            </section>
-
-            <section id="trending-parts-news">
-                <h2>Trending Parts/News</h2>
-                <p>Stay updated with the latest news in the automotive world, including recalls and trending parts.</p>
-                <article>
-                    <h3>Popular Car Parts in Demand</h3>
-                    <p>The automotive industry is constantly evolving, and these are the parts currently in high demand:</p>
-                    <ul>
-                        <li>Electric vehicle (EV) components such as battery packs and charging systems.</li>
-                        <li>Performance exhaust systems for improving power and sound.</li>
-                        <li>LED lighting systems for better visibility and energy efficiency.</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Recent Car Part Recalls</h3>
-                    <p>Staying informed about recalls can help you avoid dangerous or defective parts. Here are recent recalls:</p>
-                    <ul>
-                        <li><strong>Airbag recalls:</strong> Multiple manufacturers have recalled vehicles due to faulty airbags.</li>
-                        <li><strong>Engine cooling system issues:</strong> Some vehicles have been recalled due to cooling system failures causing engine overheating.</li>
-                        <li><strong>Brake light failures:</strong> Several models have been recalled for faulty brake lights that do not illuminate properly.</li>
-                    </ul>
-                </article>
-            </section>
-
-            <h3>Have a specfic question? - Fill the form!</h3>
-            <form action="" method="post">
-                <fieldset>
-                    <legend>Vehicle Information</legend>
-                    <label for="car-make">Car Make:</label>
-                    <input type="text" id="car-make" name="car_make" placeholder="e.g, BMW" required><br><br>
-        
-                    <label for="car-model">Car Model:</label>
-                    <input type="text" id="car-model" name="car_model" placeholder="e.g, M4" required><br><br>
-        
-                    <label for="car-year">Year of Manufacture:</label>
-                    <input type="number" id="car-year" name="car_year" min="1900" max="2024" placeholder="e.g, 2020" required><br><br>
-                </fieldset>
-        
-                <fieldset>
-                    <legend>Part Details</legend>
-                    <label>Part Category:</label>
-                    <select id="part-category" name="part_category" required>
-                        <option value="">Select a category</option>
-                        <option value="engine">Engine</option>
-                        <option value="brakes">Brakes</option>
-                        <option value="suspension">Suspension</option>
-                        <option value="electrical">Electrical</option>
-                        <option value="body">Body</option>
-                        <option value="interior">Interior</option>
-                    </select><br><br>
-            
-                    <label>Budget Range:</label>
-                    <input type="number" id="budget" name="budget" min="0" step="0.01" placeholder="Enter amount in USD"><br><br>
-                
-        
-                <fieldset>
-                    <legend>Additional Information</legend>
-                    <label>Comments or Specific Requirements:</label><br>
-                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Provide any additional details..."></textarea><br><br>
-                </fieldset>
-        
-                <input type="submit" value="Submit" class="btn">
-            </form>
-
-            <section id="faq">
-                <h2>Frequently Asked Questions (FAQ)</h2>
-                <article>
-                    <h3>How Does Motor Heaven Work?</h3>
-                    <p>Motor Heaven is an online platform that connects buyers and sellers of car parts. You can browse, search, and purchase parts, or list your own parts for sale.</p>
-                </article>
-                <article>
-                    <h3>What Payment Methods Are Accepted?</h3>
-                    <p>We accept all major credit cards, PayPal, and other secure payment gateways to ensure a smooth transaction experience.</p>
-                </article>
-                <article>
-                    <h3>How is Shipping Handled?</h3>
-                    <p>Sellers are responsible for shipping parts. We provide integrated shipping tools to calculate costs and print shipping labels directly from the platform.</p>
-                </article>
-                <article>
-                    <h3>How Do I Return a Purchased Part?</h3>
-                    <p>If a part isn’t as described or doesn’t fit your vehicle, you can initiate a return by contacting the seller directly through Motor Heaven’s messaging system.</p>
-                </article>
-            </section>
-        </div>
+ <div class="header">
+    <h1 class="header-title"><span class="highlight">⚙️M</span>otor<span class="highlight">H</span>aven🛠️</h1>
     </div>
-    <footer>
-        <p>&copy; 2024 Motor Heaven. All rights reserved.</p>
-    </footer>
+    <div class="nav">
+         <a href="index.html">Home</a>
+         <a href="Filter page.html">Find Parts</a>
+        <a href="Selling parts.html">Sell Parts</a>
+        <a href="Guides&Resources.html">Guide</a>
+        <a href="AboutUsPage.html">About Us</a>
+    </div>
+    <div class="main">
+    <h2>Buying Guides</h2>
+    <p>Learn how to evaluate car parts, avoid scams, and get the best deals when buying car parts on Motor Heaven.</p>
+    <h3>How to Avoid Scams When Buying Car Parts</h3>
+    <p>Watch this video for tips!</p>
+    <div class="guidesvid">
+        <video width="320" height="240" controls>
+            <source src="videos/avoidscamsV.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <h3>Getting the Best Deals on Car Parts</h3>
+    <p>To get the best prices, it’s important to shop smart:</p>
+    <ul>
+        <li><strong>Shop during sales events:</strong> Look out for discounts during events like Black Friday or Cyber Monday.</li>
+        <li><strong>Compare prices:</strong> Use multiple websites or comparison tools to ensure you’re getting the best deal.</li>
+        <li><strong>Consider used or refurbished parts:</strong> If budget is a concern, used or refurbished parts can offer significant savings.</li>
+        <li><strong>Use discount codes:</strong> Always check for available coupon codes before checking out.</li>
+    </ul>
+    <h2>Maintenance Guides</h2>
+    <p>Discover how to install and maintain car parts for various types of vehicles.</p>
+    <h3>General Car Maintenance Tips</h3>
+    <p>To keep your car running smoothly and avoid costly repairs, regular maintenance is key. Here are some general maintenance tips:</p>
+    <ul>
+        <li><strong>Regular oil changes:</strong> Change the oil every 5,000 to 7,500 miles to ensure engine health.</li>
+        <li><strong>Check tire pressure:</strong> Make sure your tires are properly inflated and rotate them every 6,000 miles to ensure even wear.</li>
+        <li><strong>Inspect the brake system:</strong> Regularly check your brake pads and replace them when necessary to maintain safe braking.</li>
+        <li><strong>Replace air filters:</strong> Change your air filter every 12,000 to 15,000 miles to improve engine efficiency and prolong its life.</li>
+    </ul>
+    <h3>General Brake Replacement Guide</h3>
+    <p>Replacing brake pads is a common maintenance task. Follow these general steps to replace your brake pads:</p>
+    <ul>
+        <li>Raise the car with a jack and remove the wheels.</li>
+        <li>Remove the caliper bolts and slide the caliper off the rotor.</li>
+        <li>Replace the old brake pads with new ones and reassemble the caliper.</li>
+        <li>Reinstall the wheels, lower the car, and pump the brake pedal a few times to ensure firm braking.</li>
+    </ul>
+    <h2>Trending Parts/News</h2>
+    <p>Stay updated with the latest news in the automotive world, including recalls and trending parts.</p>
+    <h3>Popular Car Parts in Demand</h3>
+    <p>The automotive industry is constantly evolving, and these are the parts currently in high demand:</p>
+
+    <ul>
+        li>Electric vehicle (EV) components such as battery packs and charging systems.</li>
+        <li>Performance exhaust systems for improving power and sound.</li>
+        <li>LED lighting systems for better visibility and energy efficiency.</li>
+    </ul>
+     
+    <h3>Recent Car Part Recalls</h3>
+    <p>Staying informed about recalls can help you avoid dangerous or defective parts. Here are recent recalls:</p>
+    <ul>
+        <li><strong>Airbag recalls:</strong> Multiple manufacturers have recalled vehicles due to faulty airbags.</li>
+        <li><strong>Engine cooling system issues:</strong> Some vehicles have been recalled due to cooling system failures causing engine overheating.</li>
+        <li><strong>Brake light failures:</strong> Several models have been recalled for faulty brake lights that do not illuminate properly.</li>
+    </ul>
+    <h3>Have a specfic question? - Fill the form!</h3>
+        <form action="" method="post">
+            <label>Car Make:</label>
+            <input type="text" id="car-make" name="carmake" placeholder="e.g, Toyota" required><br><br>
+            
+            <label>Car Model:</label>
+            <input type="text" id="car-model" name="carmodel" placeholder="e.g, Corolla" required><br><br>
+    
+            <label>Year of Manufacture:</label>
+            <input type="number" id="car-year" name="caryear" min="1900" max="2024" placeholder="e.g, 2020" required><br><br>
+
+            <label>Part Category:</label>
+            <select id="part-category" name="part_category" required>
+                <option value="">Select a category</option>
+                <option value="engine">Engine</option>
+                <option value="brakes">Brakes</option>
+                <option value="suspension">Suspension</option>
+                <option value="electrical">Electrical</option>
+                <option value="body">Body</option>
+                <option value="interior">Interior</option>
+            </select>  <br><br>
+            <label>Budget Range:</label>
+            <input type="number" id="budget" name="budget" min="0" step="0.01" placeholder="Enter amount in USD"><br><br>
+                   
+            <label>Comments or Specific Requirements:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Provide any additional details..."></textarea><br><br>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+        <div class="helpText" id="helpText"></div>
+        
+        <h2>Frequently Asked Questions (FAQ)</h2>
+                
+        <h3>How Does Motor Heaven Work?</h3>
+        <p>Motor Heaven is an online platform that connects buyers and sellers of car parts. You can browse, search, and purchase parts, or list your own parts for sale.</p>
+                
+        <h3>What Payment Methods Are Accepted?</h3>
+        <p>We accept all major credit cards, PayPal, and other secure payment gateways to ensure a smooth transaction experience.</p>
+                
+        <h3>How is Shipping Handled?</h3>
+        <p>Sellers are responsible for shipping parts. We provide integrated shipping tools to calculate costs and print shipping labels directly from the platform.</p>
+                
+        <h3>How Do I Return a Purchased Part?</h3>
+        <p>If a part isn’t as described or doesn’t fit your vehicle, you can initiate a return by contacting the seller directly through Motor Heaven’s messaging system.</p>
+
+       
+     <p>&copy; 2024 Motor Heaven. All rights reserved.</p>
+    </div>
 </body>
 </html>
