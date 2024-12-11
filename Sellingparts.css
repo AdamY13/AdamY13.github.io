@@ -219,9 +219,9 @@ body {
 
 #form-title{
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(0,0,0,0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: gray;
+    color: white;
     margin-top: 0px;
     padding: 20px 0;
 }
