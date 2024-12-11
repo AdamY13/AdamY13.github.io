@@ -357,3 +357,7 @@ body {
     color: #ccc;
     font-style: italic;
 }
+
+.hidden {
+    display: none;
+}
