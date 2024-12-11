@@ -97,5 +97,25 @@
         </form>
         
     </div>
+	<script>
+        function showTutorialLink() {
+            const category = document.getElementById("category").value;
+            const tutorialLink = document.getElementById("tutorial-link");
+            const tutorialLinks = {
+                engine: "https://www.youtube.com/results?search_query=engine+installation+tutorial",
+                transmission: "https://www.youtube.com/results?search_query=transmission+installation+tutorial",
+                brakes: "https://www.youtube.com/results?search_query=brake+installation+tutorial",
+                suspension: "https://www.youtube.com/results?search_query=suspension+installation+tutorial",
+                exhaust: "https://www.youtube.com/results?search_query=exhaust+installation+tutorial",
+                electrical: "https://www.youtube.com/results?search_query=electrical+installation+tutorial"
+            };
+
+            if (category) {
+                tutorialLink.innerHTML = `<a href="${tutorialLinks[category]}" target="_blank">Learn how to install ${category}</a>`;
+            } else {
+                tutorialLink.innerHTML = "";
+            }
+        }
+    </script>
 </body>
 </html>
