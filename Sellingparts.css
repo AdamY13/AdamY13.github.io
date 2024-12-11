@@ -246,6 +246,12 @@ body {
     color:#ccc;
 }
 
+/* This is for the selling parts page */
+
+#charCount{
+    text-align: right;
+}
+
 /* This is for the About Us page */
 
 .main {
