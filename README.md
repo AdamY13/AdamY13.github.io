@@ -32,7 +32,7 @@ The purpose of this project was to:
 
 ## 🚀 How to Run
 
-Visit the [website](www.adamy13.github.io)
+Visit the [website](https://www.adamy13.github.io)
 
 ## 🔮 Future Improvements
 
