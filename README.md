@@ -1,44 +1,44 @@
-🚗 MotorHaven
+# 🚗 MotorHaven
 
 Welcome to MotorHaven — your one-stop shop for buying and selling spare parts online! This project was created as part of a web programming course to explore the essentials of front-end development with HTML, CSS, and JavaScript.
 
-🌟 Features
+## 🌟 Features
 
-🛍️ Browse Parts: View a selection of spare parts with descriptions and prices.
+🛍️ **Browse Parts**: View a selection of spare parts with descriptions and prices.
 
-📩 Sell Parts: Fill out a simple form to list your parts for sale.
+📩 **Sell Parts**: Fill out a simple form to list your parts for sale.
 
-📱 Responsive Design: Adjusts to different screen sizes for a smoother experience.
+📱 **Responsive Design**: Adjusts to different screen sizes for a smoother experience.
 
-🛠️ Interactive Elements: Basic JavaScript adds dynamic interactions.
+🛠️ **Interactive Elements**: Basic JavaScript adds dynamic interactions.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-HTML: Structure the content.
+- HTML: Structure the content.
 
-CSS: Style and layout.
+- CSS: Style and layout.
 
-JavaScript: Add interactivity.
+- JavaScript: Add interactivity.
 
-🎯 Project Purpose
+## 🎯 Project Purpose
 
 The purpose of this project was to:
 
-Learn how to structure web pages with HTML.
+- Learn how to structure web pages with HTML.
 
-Style and design layouts using CSS.
+- Style and design layouts using CSS.
 
-Add basic functionality with JavaScript.
+- Add basic functionality with JavaScript.
 
 🚀 How to Run
 
 Clone the repository:
 
- git clone <repository-url>
+git clone <repository-url>
 
 Navigate to the project folder:
 
- cd MotorHaven
+cd MotorHaven
 
 Open index.html in your browser:
 
@@ -51,5 +51,3 @@ Simply double-click the index.html file or run it with a local server like Live 
 👤 Implement user authentication.
 
 🎨 Enhance the design with modern frameworks like Bootstrap or Tailwind CSS.
-
-Let me know if you want any tweaks or more sections! 🚀
