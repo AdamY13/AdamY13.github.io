@@ -30,24 +30,21 @@ The purpose of this project was to:
 
 - Add basic functionality with JavaScript.
 
-🚀 How to Run
+## 🚀 How to Run
 
-Clone the repository:
+### Clone the repository:
+```
+git clone https://github.com/AdamY13/AdamY13.github.io
+cd <Folder Name>
+```
+### Open index.html in your browser:
 
-git clone <repository-url>
+- Simply double-click the index.html file or run it with a local server like Live Server (VSCode extension).
 
-Navigate to the project folder:
+## 🔮 Future Improvements
 
-cd MotorHaven
+- 🛡️ Add backend support for managing listings.
 
-Open index.html in your browser:
+- 👤 Implement user authentication.
 
-Simply double-click the index.html file or run it with a local server like Live Server (VSCode extension).
-
-🔮 Future Improvements
-
-🛡️ Add backend support for managing listings.
-
-👤 Implement user authentication.
-
-🎨 Enhance the design with modern frameworks like Bootstrap or Tailwind CSS.
+- 🎨 Enhance the design with modern frameworks like Bootstrap or Tailwind CSS.
